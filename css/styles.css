@@ -1,11 +1,9 @@
-/* Importar la fuente Roboto de Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* Reset básico para estilos de navegadores */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; /* Aplicar la fuente Roboto a todos los elementos */
+  font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -21,72 +19,68 @@ body{
   height: 100%;
 }
 
-/* Estilos de la barra de navegación */
 .navbar {
-    background-color: transparent; /* Azul oscuro, ajusta según el diseño */
+    background-color: transparent; 
     color: white;
-    padding: 10px 0; /* Espaciado dentro de la barra de navegación */
+    padding: 10px 0; 
     text-align: center; 
     filter: brightness(1);
 }
 
 .navbar nav a {
-    display: inline-block; /* Permite especificar ancho y alto */
+    display: inline-block; 
     color: white;
     text-decoration: none;
     font-size: 1.5em;
-    margin: 0 10px; /* Espacio horizontal entre botones */
-    padding: 10px 20px; /* Espaciado dentro de los botones */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave para el efecto hover */
-    min-width: 100px; /* Ancho mínimo para todos los botones */
-    text-align: center; /* Asegura que el texto está centrado */
+    margin: 0 10px;
+    padding: 10px 20px; 
+    transition: background-color 0.3s, color 0.3s; 
+    min-width: 100px; 
+    text-align: center;
     border-radius: 3px;
 }
 
 .navbar nav a:hover {
-    background-color: white; /* Color de fondo al pasar el ratón */
-    color: black; /* Color del texto al pasar el ratón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es un botón */
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
 }
 
-/* Estilos para el título y el subtítulo */
 .header {
-  background-color: transparent; /* Azul oscuro, ajusta según el diseño */
+  background-color: transparent; 
   color: white;
   text-align: center;
-  height: 60vh; /* Altura del contenedor del encabezado */
+  height: 60vh; 
   flex-direction: column;
-  position: relative; /* Para z-index */
+  position: relative; 
   padding-top: 5%;
-  z-index: 1; /* Asegura que el encabezado esté debajo del video */
+  z-index: 1; 
 }
 
 .header h1 {
-  font-size: 3em; /* Aumentar tamaño del título */
-  font-weight: 700; /* Hacer la fuente más gruesa */
-  margin-bottom: 0.5em; /* Espacio debajo del título */
-  margin: 0 15vw 0 15vw; /* Espacio horizontal entre el encabezado y los bordes de la pantalla */
+  font-size: 3em; 
+  font-weight: 700; 
+  margin-bottom: 0.5em;
+  margin: 0 15vw 0 15vw;
 }
 
 .header p {
-  font-size: 1.75em; /* Aumentar tamaño del subtítulo */
-  font-weight: 400; /* Peso de la fuente normal */
-  margin: 3rem 10vw 0 10vw; /* Espacio horizontal entre el encabezado y los bordes de la pantalla */
+  font-size: 1.75em;
+  font-weight: 400; 
+  margin: 3rem 10vw 0 10vw;
 }
 
-/* Estilos del contenedor de video */
 .video-container {
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  margin-top: -25vh; /* Mover el video hacia arriba para superponer al header */
-  position: relative; /* Para z-index */
-  z-index: 2; /* Asegura que el video esté encima del encabezado */
-  background-color: transparent; /* Fondo blanco, ajusta según el diseño */
+  justify-content: center; 
+  margin-top: -25vh; 
+  position: relative; 
+  z-index: 2;
+  background-color: transparent; 
 }
 
 .video-container iframe {
-  /* Mantener la relación de aspecto 16:9 */
-  height: 45vh; /* Ajusta esto según el ancho deseado */
+  height: 45vh; 
   width: 80vh;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
